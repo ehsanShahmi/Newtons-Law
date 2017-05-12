@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">"Newton's Law "</string>
+    <string name="action_settings">Settings</string>
+    <string name="welcome1">Welcome to</string>
+    <string name="welcome2">Newtons Law of Gravity</string>
+    <string name="ex_newton">explore</string>
+    <string name="title_activity_explore_newton">exploreNewton</string>
+    <string name="about_image">about</string>
+    <string name="aboutImage">about</string>
+    <string name="creditsImage">about</string>
+    <string name="title_activity_laws">laws</string>
+    <string name="title_activity_explanation">explanation</string>
+    <string name="title_activity_problems">problems</string>
+</resources>

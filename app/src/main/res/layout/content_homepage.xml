@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.pial.newtonslaw.homepage"
+    tools:showIn="@layout/activity_homepage"
+
+    android:background="@drawable/newton">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/welcome1"
+        android:id="@+id/intro1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#f32314" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/welcome2"
+        android:id="@+id/intro2"
+        android:layout_below="@+id/intro1"
+        android:layout_centerHorizontal="true"
+        android:textColor="#4ac924" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exploreid"
+        android:layout_below="@+id/intro2"
+        android:layout_marginTop="96dp"
+        android:src="@drawable/explore"
+        android:contentDescription="@string/ex_newton"
+        android:onClick="onClick"
+        android:layout_toLeftOf="@+id/creditsid"
+        android:layout_toStartOf="@+id/creditsid"
+        android:background="@null"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutid"
+        android:contentDescription="@string/about_image"
+        android:src="@drawable/about"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/intro2"
+        android:layout_alignStart="@+id/intro2"
+        android:background="@null"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/creditsid"
+        android:contentDescription="@string/creditsImage"
+        android:src="@drawable/credits"
+        android:layout_below="@+id/aboutid"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/intro1"
+        android:layout_toEndOf="@+id/intro1"
+        android:background="@null"/>
+
+</RelativeLayout>
